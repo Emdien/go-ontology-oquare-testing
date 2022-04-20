@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run OQuaRE metrics module
-        uses: Emdien/oquare-metrics
+        uses: Emdien/oquare-metrics@v0.0.1
         with:
           contents-folder: OQuaRE
           archive-plot: true
