@@ -32,7 +32,8 @@ jobs:
         with:
           contents-folder: OQuaRE
           archive-plot: true
-          ontology-folder: src/ontology
+          ontology-folder: src/ontology/imports
+          reasoner: HERMIT
 
       - name: Run ontology QC checks
         run: cd src/ontology; make -j 4 ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' travis_test
